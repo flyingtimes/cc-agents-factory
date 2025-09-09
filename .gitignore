@@ -327,3 +327,23 @@ coverage/
 
 # Claude Code specific
 claude-code-logs/
+
+# Audio extraction specific
+outputs/
+*.mp3
+*.wav
+*.aac
+*.flac
+*.m4a
+*.wma
+
+# MCP server specific
+*.log
+*.pid
+*.sock
+
+# Development specific
+.env.local
+.env.development
+.env.test
+.env.production

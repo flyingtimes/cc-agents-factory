@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "extract-audio": {
+      "type": "stdio",
+      "command": "python",
+      "args": [
+        "tools/extract-audio-mcp/server.py"
+      ],
+      "env": {}
+    }
+  }
+}
