@@ -330,6 +330,7 @@ claude-code-logs/
 
 # Audio extraction specific
 outputs/
+models/
 *.mp3
 *.wav
 *.aac
