@@ -1,11 +1,13 @@
 {
   "mcpServers": {
     "extract-audio": {
-      "type": "stdio",
+      "command": "node",
+      "args": ["tools/extract-audio-nodejs/server.js"],
+      "env": {}
+    },
+    "transcript": {
       "command": "python",
-      "args": [
-        "tools/extract-audio-mcp/server.py"
-      ],
+      "args": ["tools/transcript/server.py"],
       "env": {}
     }
   }

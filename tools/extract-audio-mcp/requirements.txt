@@ -1,3 +1,0 @@
-mcp
-pydantic>=2.8.0
-aiofiles>=23.0.0
