@@ -1,13 +1,18 @@
 {
   "mcpServers": {
-    "extract-audio": {
-      "command": "node",
-      "args": ["tools/extract-audio-nodejs/server.js"],
+    "datetime": {
+      "command": "python",
+      "args": ["tools/datetime/server.py"],
       "env": {}
     },
-    "transcript": {
+    "video2audio": {
       "command": "python",
-      "args": ["tools/transcript/server.py"],
+      "args": ["tools/video2audio/server.py"],
+      "env": {}
+    },
+    "audio2txt": {
+      "command": "python",
+      "args": ["tools/audio2txt-fastmcp/server.py"],
       "env": {}
     }
   }

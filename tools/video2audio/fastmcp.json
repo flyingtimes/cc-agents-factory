@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "video2audio": {
+      "command": "python",
+      "args": ["/Users/clark/code/cc-agents-factory/tools/video2audio/server.py"],
+      "env": {}
+    }
+  }
+}

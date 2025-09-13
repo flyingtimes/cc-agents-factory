@@ -1,0 +1,44 @@
+{
+  "name": "video2audio",
+  "version": "1.0.0",
+  "description": "FastMCP server for extracting audio from video files using ffmpeg with configurable quality settings",
+  "transport": "stdio",
+  "python": "server.py",
+  "dependencies": [
+    "fastmcp>=0.4.0",
+    "pydantic>=2.0.0",
+    "aiofiles>=23.0.0"
+  ],
+  "tools": [
+    {
+      "name": "extract_audio",
+      "description": "Extract audio from video files using ffmpeg with configurable quality settings",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "input_path": {
+            "type": "string",
+            "description": "Path to video file (MP4, AVI, MOV, etc.) or URL"
+          },
+          "output_name": {
+            "type": "string",
+            "description": "Custom output filename (without extension)"
+          },
+          "output_dir": {
+            "type": "string",
+            "description": "Output directory (default: ../outputs)"
+          },
+          "audio_quality": {
+            "type": "string",
+            "enum": ["low", "medium", "high"],
+            "default": "medium",
+            "description": "Audio quality: low (128kbps), medium (192kbps), high (320kbps)"
+          }
+        },
+        "required": ["input_path"]
+      }
+    }
+  ],
+  "resources": [],
+  "prompts": []
+}

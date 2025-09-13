@@ -12,12 +12,27 @@
       "Bash(sed:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(git check-ignore:*)"
+      "Bash(git check-ignore:*)",
+      "mcp__tool1__hello",
+      "mcp__mcp-deepwiki__deepwiki_fetch",
+      "mcp__datetime__get_current_date",
+      "mcp__datetime__get_current_time",
+      "mcp__datetime__get_current_datetime",
+      "mcp__datetime__get_date_info",
+      "mcp__datetime__format_date",
+      "mcp__datetime__list_common_timezones",
+      "mcp__video2audio__extract_audio_from_video",
+      "mcp__audio2txt__transcribe_audio_sensevoice",
+      "Bash(ls:*)",
+      "Bash(pip install:*)",
+      "Bash(find:*)",
+      "Bash(git add:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "extract-audio",
-    "transcript"
+    "datetime",
+    "video2audio",
+    "audio2txt"
   ]
 }
